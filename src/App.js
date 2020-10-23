@@ -1,5 +1,5 @@
 import React from "react";
-// import "./styles.css";
+import "./style.css";
 
 import FetchAllProducts from "./components/FetchAllProducts";
 import Cards from "./components/Cards";
