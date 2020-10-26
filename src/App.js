@@ -32,8 +32,9 @@ export default function App() {
         <FetchAllProducts />
         <FetchRedeem />
         <div className="Cards"> <Cards /> </div>
-        <hr class="line"></hr>
+      
         <Pagination />
+        <hr class="line"></hr>
 
         <Footer />
       </div>

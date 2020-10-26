@@ -33,6 +33,8 @@
     background-color: coral;
     width: 12em;
     margin-top: 1em;
+    padding: 0.2em;
+    border-radius: 15px;
 }
 #buy-blue{
    

@@ -6,48 +6,69 @@ import '../Styles/pagination.css'
 
 const SearchBar = () => {
   const { pagination, setPagination } = useContext(AppContext);
+  const { orderProducts, setOrderProducts } = useContext(AppContext);
   const [button1Abaible, setButton1Abaible] = useState(true);
   const [button2Abaible, setButto21Abaible] = useState(false);
+  const [paginas,setPaginas] = useState(<p>16 of 32 products</p>)
  
- let paginas = <p>16 of 32 products</p>
- 
+//  let paginas = <p>16 of 32 products</p>
+useEffect(() => {
+  if(orderProducts !== "principal") {
+     setButton1Abaible(true)
+     setButto21Abaible(true)
+    //  setPaginas (<p></p>)
+     } else{
+       setButton1Abaible(true)
+      setButto21Abaible(false)}
+      // setPaginas (<p>16 of 32 products</p>)
+
+     
+  
+
+
+},[orderProducts,setOrderProducts])
  
   const handlerPagination2 = (e) => {
     setPagination([16, 32]);
     setButton1Abaible(false);
     setButto21Abaible(true);
-    paginas= <p>32 of 32 products</p>
+    setPaginas( <p>32 of 32 products</p>)
     console.log("QQQQQQQQ", e.target.value);
+    console.log("HHHHHHHHH", pagination);
   };
   const handlerPagination1 = (e) => {
     setPagination([0, 16]);
     setButton1Abaible(true);
     setButto21Abaible(false);
-    paginas= <p>16 of 32 products</p>
-    console.log("QQQQQQQQ", e.target.value);
+    setPaginas( <p>16 of 32 products</p>)
+    console.log("JJJJJJJJJ", pagination);
   };
 
   return (
     <div className="pagination">
-        {paginas}
+      
+      {orderProducts !== "principal" ?   <p></p>   
+      : <div>{paginas}</div> }  
         
-         
-          <button
+           <div> <button
         disabled={button1Abaible}
         value={[0, 16]}
         onClick={handlerPagination1}
       >
-        1
+       <img src={require('../images/arrow-left.svg')}  alt="Logo" id="arrow-left" />
       </button>
       <button
         disabled={button2Abaible}
+        // disabled= {false}
         value={[16, 32]}
         onClick={handlerPagination2}
       >
-        2
+         <img src={require('../images/arrow-right.svg')}  alt="Logo" id="arrow-right" />
       </button>
+      </div> 
+      
     
-      <div></div>
+     
     </div>
   );
 };
