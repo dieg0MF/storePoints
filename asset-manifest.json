@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/storePoints/static/css/main.fb437270.chunk.css",
-    "main.js": "/storePoints/static/js/main.a40928a9.chunk.js",
-    "main.js.map": "/storePoints/static/js/main.a40928a9.chunk.js.map",
+    "main.css": "/storePoints/static/css/main.9ff3b564.chunk.css",
+    "main.js": "/storePoints/static/js/main.fff8c695.chunk.js",
+    "main.js.map": "/storePoints/static/js/main.fff8c695.chunk.js.map",
     "runtime-main.js": "/storePoints/static/js/runtime-main.76d47368.js",
     "runtime-main.js.map": "/storePoints/static/js/runtime-main.76d47368.js.map",
-    "static/js/2.a6fc05a6.chunk.js": "/storePoints/static/js/2.a6fc05a6.chunk.js",
-    "static/js/2.a6fc05a6.chunk.js.map": "/storePoints/static/js/2.a6fc05a6.chunk.js.map",
+    "static/js/2.c3ab0214.chunk.js": "/storePoints/static/js/2.c3ab0214.chunk.js",
+    "static/js/2.c3ab0214.chunk.js.map": "/storePoints/static/js/2.c3ab0214.chunk.js.map",
     "index.html": "/storePoints/index.html",
-    "precache-manifest.b5c169ac424472a99d37008c3197250b.js": "/storePoints/precache-manifest.b5c169ac424472a99d37008c3197250b.js",
+    "precache-manifest.1c3fd4e1266848c5cb30d320c116427a.js": "/storePoints/precache-manifest.1c3fd4e1266848c5cb30d320c116427a.js",
     "service-worker.js": "/storePoints/service-worker.js",
-    "static/css/main.fb437270.chunk.css.map": "/storePoints/static/css/main.fb437270.chunk.css.map",
-    "static/js/2.a6fc05a6.chunk.js.LICENSE.txt": "/storePoints/static/js/2.a6fc05a6.chunk.js.LICENSE.txt",
+    "static/css/main.9ff3b564.chunk.css.map": "/storePoints/static/css/main.9ff3b564.chunk.css.map",
+    "static/js/2.c3ab0214.chunk.js.LICENSE.txt": "/storePoints/static/js/2.c3ab0214.chunk.js.LICENSE.txt",
     "static/media/aerolab-logo.svg": "/storePoints/static/media/aerolab-logo.71af6f4b.svg",
+    "static/media/arrow-left.svg": "/storePoints/static/media/arrow-left.2e6efe58.svg",
+    "static/media/arrow-right.svg": "/storePoints/static/media/arrow-right.bedef383.svg",
     "static/media/buy-blue.svg": "/storePoints/static/media/buy-blue.2f11a957.svg",
     "static/media/coin.svg": "/storePoints/static/media/coin.4669120c.svg",
     "static/media/header-x1.png": "/storePoints/static/media/header-x1.f0b98264.png"
   },
   "entrypoints": [
     "static/js/runtime-main.76d47368.js",
-    "static/js/2.a6fc05a6.chunk.js",
-    "static/css/main.fb437270.chunk.css",
-    "static/js/main.a40928a9.chunk.js"
+    "static/js/2.c3ab0214.chunk.js",
+    "static/css/main.9ff3b564.chunk.css",
+    "static/js/main.fff8c695.chunk.js"
   ]
 }
