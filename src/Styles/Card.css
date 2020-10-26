@@ -1,0 +1,63 @@
+
+
+
+.Cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    margin-bottom: 3em;
+    justify-content: center;
+    box-shadow: 2px 2px 4px 0px #000000 10%;
+  
+
+}
+
+.Card{
+    height: 300px;
+    margin:2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: black solid 1px; */
+    align-items: center;
+    padding: 0.5em;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+
+
+
+}
+.Card section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: coral;
+    width: 12em;
+    margin-top: 1em;
+}
+#buy-blue{
+   
+    height: 2em;
+    margin-left: 0;
+    align-self: flex-end
+}
+.Card h6 {
+    margin: auto  1em;
+   
+}
+
+
+
+#Coin{ 
+    height:"20px";
+    margin-bottom: -0.7em;
+
+
+}
+
+.line{
+  display: flex;
+    border-top: 3px solid rgba(217, 217, 217, 1);
+    margin-bottom: 2em;
+   
+
+}

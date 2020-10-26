@@ -13,6 +13,8 @@ import AddPoints from "./components/AddPoints";
 // import HistoryRedeem from "./components/HistoryRedeem";
 import SearchBar from "./components/SearchBar";
 import Pagination from "./components/Pagination";
+import Footer from "./components/Footer"
+import "./Styles/Card.css"
 
 export default function App() {
   return (
@@ -29,9 +31,11 @@ export default function App() {
         <FetchPoints />
         <FetchAllProducts />
         <FetchRedeem />
-
-        <Cards />
+        <div className="Cards"> <Cards /> </div>
+        <hr class="line"></hr>
         <Pagination />
+
+        <Footer />
       </div>
     </AppProvider>
   );

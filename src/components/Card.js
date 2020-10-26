@@ -14,8 +14,8 @@ const News = ({ product }) => {
   };
 
   return (
-    <article>
-      <p>{product.name}</p>
+    <article className="Card">
+     <img src={require('../images/buy-blue.svg')}  alt="Logo" id="buy-blue" />
       <img
         id={product._id}
         src={product.img.url}
@@ -24,16 +24,19 @@ const News = ({ product }) => {
         height="200"
         onClick={onRedeem}
       />
-
+       <h5>{product.name}</h5>
+    <section>
+    <h6>{product.category}</h6>
       <>
         {user.points < product.cost ? (
           <p> {product.cost - user.points}</p>
         ) : (
-          <p> {product.cost} </p>
+          <p> {product.cost} <img src={require('../images/coin.svg')}  alt="Logo" id="Coin" /> </p>
         )}
       </>
 
-      <p>{product.category}</p>
+    
+      </section>
     </article>
   );
 };
