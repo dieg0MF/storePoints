@@ -1,30 +1,35 @@
-import React, { useContext } from "react";
+import React, { useContext,useEffect,useState } from "react";
 import { AppContext } from "../AppProvider";
 // import FetchPoints from "./FetchPointsC";
 // import money from "./money.png"
 
 function AddPoints() {
   const { handlerPoints, setHandlerPoints } = useContext(AppContext);
+  const [animation,setAnimation] = useState("")
+
+
+
 
   const addPoints = (e) => {
     setHandlerPoints(e.target.value);
-    console.log("ADDPOINTS", e.target.value);
-    // console.log("handlerPoints", handlerPoints);
+     setAnimation( "animate__animated animate__bounce animate__delay-0.1s" )
+     setTimeout(()=>{setAnimation( "" )},1000)
+     
   };
-  console.log("handlerPoints", handlerPoints);
-  return (
-    <div>
-      <img className="animate__shakeY " src="/money.png" alt="no" />
 
-      <img
-        class="animate__shakeY "
-        alt=""
-        src="money.png"
-        width="30"
-        height="30"
-      />
+return (
+    <div className="addPoints">
+
+      <h4>Add Points</h4>
+      <div className="coinsGroup">
+      <img src={require('../images/coin.svg')}  class={animation} alt="Logo" id="CoinAdd"/>
+      <img src={require('../images/coin.svg')}  class="animate__animated animate__bounce animate__delay-2s" alt="Logo" id="CoinAdd"/>
+      <img src={require('../images/coin.svg')}  class="animate__animated animate__bounce animate__delay-2s" alt="Logo" id="CoinAdd"/>
+      </div>
+   
+<div className="buttonsGroup">
       <button value="1000" onClick={addPoints}>
-        1000 <img alt="" src="money.png" width="20" height="20" />
+      1000
       </button>
       <button value="5000" onClick={addPoints}>
         5000
@@ -32,6 +37,7 @@ function AddPoints() {
       <button value="7500" onClick={addPoints}>
         7500
       </button>
+      </div>
     </div>
   );
 }

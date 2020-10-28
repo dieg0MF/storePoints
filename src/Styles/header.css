@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
 
+
+
 }
 
 .headerTop{
@@ -17,9 +19,9 @@ justify-content: space-between;
 }
 
 .headerTop button{
-    background-color:#44c767;
+    background-color:rgb(252, 179, 45);
 	border-radius:28px;
-	border:1px solid #18ab29;
+	border:1px solid #cf8c10;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -31,7 +33,7 @@ justify-content: space-between;
     margin-left: 2em;
 }
 .headerTop button:hover{
-    background-color:#5cbf2a;
+    background-color:#ca730f;
 }
 .headerTop button:active{
     position:relative;

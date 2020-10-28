@@ -10,10 +10,26 @@ const productsHistory = () => {
   
   if(historyProducts !== [] ){ return (
   
-    historyProducts.map((prod) => (
+
+
+  
+    historyProducts.slice(20,30).map((prod) => (
+   
+    
+    
+
     <ul>
-      <li>{prod.name}</li>
+      <li>{prod.name} {  <img
+        id={prod._id}
+        src={prod.img.url}
+        alt=""
+        width="40"
+        height="40"
+      
+      />}</li>
     </ul>
+  
+   
   )))
 }else  { return <p>loading</p> }
 }

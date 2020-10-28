@@ -10,28 +10,33 @@ const News = ({ product }) => {
 
   const onRedeem = (e) => {
     setRedeemProductId(e.target.id);
+    alert("compraste {e.target.name}")
     console.log("MMMMM", e.target.id);
+    console.log("USer",user)
   };
 
   return (
     <article className="Card">
-     <img src={require('../images/buy-blue.svg')}  alt="Logo" id="buy-blue" />
+     
+     
+     { user.points > product.cost ? <img src={require('../images/buy-blue.svg')}  alt="Logo" className="buy-blue"  onClick={onRedeem} name ={product.name} id={product._id} /> : null }
+     
       <img
         id={product._id}
         src={product.img.url}
         alt=""
-        width="200"
-        height="200"
-        onClick={onRedeem}
+        width="130px"
+        height="130px"
+      
       />
        <h5>{product.name}</h5>
     <section>
     <h6>{product.category}</h6>
       <>
         {user.points < product.cost ? (
-          <p> {product.cost - user.points}</p>
+          <p> Necesitas {product.cost - user.points} <img src={require('../images/coin.svg')}  alt="Logo" id="Coin"   onClick={onRedeem} /> </p>
         ) : (
-          <p> {product.cost} <img src={require('../images/coin.svg')}  alt="Logo" id="Coin" /> </p>
+          <p> {product.cost} <img src={require('../images/coin.svg')}  alt="Logo" id="Coin"   onClick={onRedeem} /> </p>
         )}
       </>
 

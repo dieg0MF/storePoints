@@ -1,7 +1,18 @@
 .pagination {
     display: flex;
     justify-content: space-between;
-    margin :2em;
+    margin :2em auto;
     align-items: center;
+    width: 90%;
+ 
 
+}
+.pagination button{
+    margin: 0.5em;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.finalLine {
+    width: 90%;
+    margin: auto;
 }

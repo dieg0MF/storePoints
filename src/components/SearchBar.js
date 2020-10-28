@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { AppContext } from "../AppProvider";
 import SearchByCategories from "./SearchByCategories";
+import "../Styles/SearchBar.css"
 
 // import Card from "./Card";
 
@@ -17,17 +18,22 @@ const SearchBar = () => {
     console.log("BOTONAPRETADO", higestLowest);
   };
   return (
-    <div>
+    <div className="searchBar">
+
+
+      <p> Search </p>
+<div>
+
+<SearchByCategories handlerProductList={handlerProductList} />
+</div>
+
       <button value="Lowest" onClick={handlerProductListByPrice}>
         Lowest Price
       </button>
       <button value="Higest" onClick={handlerProductListByPrice}>
         Highest Price
       </button>
-      <div>
-
-        <SearchByCategories handlerProductList={handlerProductList} />
-      </div>
+      
     </div>
   );
 };

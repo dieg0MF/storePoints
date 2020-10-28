@@ -1,0 +1,143 @@
+
+.noHeader{
+    width: 90%;
+    margin: auto;
+}
+.midleBody {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+.lineaVertical {
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid rgb(226, 33, 33);
+    margin-bottom: 2em;
+}
+.bodyLeft { 
+    max-width: 300px;
+    min-width: 220px;
+}
+
+.addPoints {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgba(252, 245, 239, 0.979);
+ 
+}
+
+.addPoints h4 {
+    font-family: 'Lemonada', cursive;
+    font-family: 'Luckiest Guy', cursive;
+    margin:7em auto;
+}
+.coinsGroup{
+    display: flex;
+    flex-direction: row;
+justify-content: space-around;
+align-items: center;
+    width: 100%;
+   
+}
+#CoinAdd{
+    /* margin-top: 2em; */
+ 
+ 
+
+    
+}
+.buttonsGroup {
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.addPoints button {
+    box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #58bcdd 100%);
+	background-color: #58bcdd;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+
+	text-decoration:none;
+	text-shadow:0px 1px 0px#58bcdd;
+	font-size:1em;
+	font-weight:bold;
+	padding:0.4em 1em;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+    margin: 0.1em;
+    
+}
+.addPoints button:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.addPoints button:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+.tableHistory{
+    text-decoration:none;
+    border: rgb(221, 225, 233) 1px solid;
+    display: flex;
+    flex-direction: column;
+  
+    height: 20em;
+    margin-top: 2em;
+    
+ 
+  
+}
+.tableHistory h4{
+    display: flex;
+    background-color: #58bcdd ;
+    width:  100%;
+    padding: 0.6em 2em;
+     justify-content: center;
+    margin-bottom: 1em;
+}
+.historyList {
+    flex:1;
+    overflow-y : scroll;
+    
+}
+.historyList::-webkit-scrollbar {
+    width: 1em;
+    height: 0.2em;
+   }
+   .historyList::-webkit-scrollbar-thumb {
+    background: linear-gradient(253deg,rgba(71, 222, 236, 0.8) 25%,#58bcdd 64%);
+    border-radius: 10px;
+   }
+   /* .historyList::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(360deg, #78a3e3 25%,#49b6d1 64%);
+   } */
+   .historyList::-webkit-scrollbar-track{
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
+   }
+
+
+    
+.tableHistory li {
+    list-style:none;
+   font-size: 0.7em;
+   margin:1em
+}
