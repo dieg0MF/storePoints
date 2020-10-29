@@ -14,6 +14,8 @@ export default function AppProvider({ children }) {
   const [orderProducts, setOrderProducts] = useState("principal");
   const [higestLowest, setHigestLowest] = useState("principal");
   const [pagination, setPagination] = useState([0, 16]);
+  const [show,setShow] = useState(false)
+  const [lastProduct,SetLastProduct]= useState("")
 
   return (
     <AppContext.Provider
@@ -37,7 +39,13 @@ export default function AppProvider({ children }) {
         higestLowest,
         setHigestLowest,
         pagination,
-        setPagination
+        setPagination,
+        show,
+        setShow,
+        lastProduct,
+        SetLastProduct
+
+
       }}
     >
       {children}

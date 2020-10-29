@@ -40,7 +40,8 @@
    
     height: 2em;
     margin-left: 0;
-    align-self: flex-end
+    align-self: flex-end;
+    cursor: pointer;
 }
 .Card h6 {
     margin: auto  1em;

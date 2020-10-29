@@ -6,14 +6,26 @@ import { AppContext } from "../AppProvider";
 function AddPoints() {
   const { handlerPoints, setHandlerPoints } = useContext(AppContext);
   const [animation,setAnimation] = useState("")
+  const [animation2,setAnimation2] = useState("")
+  const [animation3,setAnimation3] = useState("")
+  const [coins,setCoins] = useState("")
 
 
 
 
   const addPoints = (e) => {
     setHandlerPoints(e.target.value);
-     setAnimation( "animate__animated animate__bounce animate__delay-0.1s" )
-     setTimeout(()=>{setAnimation( "" )},1000)
+
+    if(e.target.value === "1000"){setAnimation( "animate__animated animate__bounce animate__delay-0.1s" )}
+    if(e.target.value === "5000"){setAnimation2( "animate__animated animate__bounce animate__delay-0.1s" )}
+    if(e.target.value === "7500"){setAnimation3( "animate__animated animate__bounce animate__delay-0.1s" )}
+     
+  
+     setTimeout(()=>{setAnimation( "" )
+     setAnimation2( "" )
+     setAnimation3( "" )
+    },1000)
+     console.log("TARGET",e.target.value)
      
   };
 
@@ -22,9 +34,9 @@ return (
 
       <h4>Add Points</h4>
       <div className="coinsGroup">
-      <img src={require('../images/coin.svg')}  class={animation} alt="Logo" id="CoinAdd"/>
-      <img src={require('../images/coin.svg')}  class="animate__animated animate__bounce animate__delay-2s" alt="Logo" id="CoinAdd"/>
-      <img src={require('../images/coin.svg')}  class="animate__animated animate__bounce animate__delay-2s" alt="Logo" id="CoinAdd"/>
+      <img src={require('../images/coin.svg')}    class={animation} alt="Logo" id="CoinAdd"/>
+      <img src={require('../images/coin.svg')}   class={animation2} alt="Logo" id="CoinAdd"/>
+      <img src={require('../images/coin.svg')}     class={animation3} alt="Logo" id="CoinAdd"/>
       </div>
    
 <div className="buttonsGroup">

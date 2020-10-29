@@ -1,12 +1,22 @@
 
+.bodyGroup{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y : scroll;
+    flex: 1;
+    
+}
+
 .noHeader{
     width: 90%;
     margin: auto;
+    height: 80px;
 }
 .midleBody {
     display: flex;
     flex-direction: row;
-    flex: 1;
+  
     width: 90%;
     margin: auto;
 }
@@ -23,6 +33,12 @@
 .bodyLeft { 
     max-width: 300px;
     min-width: 220px;
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+   margin-right: 1em;
+ 
+    
 }
 
 .addPoints {
@@ -37,7 +53,10 @@
 .addPoints h4 {
     font-family: 'Lemonada', cursive;
     font-family: 'Luckiest Guy', cursive;
-    margin:7em auto;
+    margin:2em auto;
+    border:2px solid rgb(245, 152, 13);
+    border-radius: 50%;
+    padding: 4em 2em;
 }
 .coinsGroup{
     display: flex;
@@ -98,7 +117,7 @@ align-items: center;
     display: flex;
     flex-direction: column;
   
-    height: 20em;
+    height: 30em;
     margin-top: 2em;
     
  
@@ -111,10 +130,12 @@ align-items: center;
     padding: 0.6em 2em;
      justify-content: center;
     margin-bottom: 1em;
+    font-family: 'Noticia Text', serif;
 }
 .historyList {
     flex:1;
     overflow-y : scroll;
+
     
 }
 .historyList::-webkit-scrollbar {

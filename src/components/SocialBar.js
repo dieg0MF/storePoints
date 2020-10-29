@@ -21,16 +21,16 @@ return(
                               <div className="social-icons mb-3 iconpad text-center">
                                  
                                   
-                                  <a href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s" target="_blank" className="slider-nav-item"><i class="fab fa-facebook"></i></a>
-                                  <a href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s" target="_blank" className="slider-nav-item"><i className="fab fa-google-plus"></i></a>
-                                  <a href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s" target="_blank" className="slider-nav-item"><i className="fab fa-twitter"></i></a>
-                                  <a href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s" target="_blank" className="slider-nav-item"><i className="fab fa-instagram"></i></a>
-                                  <a href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s" target="_blank" className="slider-nav-item"><i className="fab fa-linkedin"></i></a>
+                                  <a href="" target="_blank" className="slider-nav-item"><i class="fab fa-facebook"></i></a>
+                                  <a href="" target="_blank" className="slider-nav-item"><i className="fab fa-google-plus"></i></a>
+                                  <a href="" target="_blank" className="slider-nav-item"><i className="fab fa-twitter"></i></a>
+                                  <a href="" target="_blank" className="slider-nav-item"><i className="fab fa-instagram"></i></a>
+                                  <a href="" target="_blank" className="slider-nav-item"><i className="fab fa-linkedin"></i></a>
                                   <a href="https://www.pinterest.co.uk/CommixtureSoft" target="_blank" className="slider-nav-item"><i className="fab fa-pinterest"></i></a>
-                                  <a href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s" target="_blank" className="slider-nav-item"><i className="fab fa-skype"></i></a>                                
+                                  <a href="" target="_blank" className="slider-nav-item"><i className="fab fa-skype"></i></a>                                
                                   <a href="#" className="slider-nav-item"><i className="fab fa-youtube"></i></a>
                                   <a href="#" className="behance slider-nav-item"><i className="fab fa-behance"></i></a>
-                                  <a href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s" target="_blank" className="slider-nav-item"><i className="fab fa-dribbble"></i></a>
+                                  <a href="" target="_blank" className="slider-nav-item"><i className="fab fa-dribbble"></i></a>
                               </div>
                           </div>
                       </div>

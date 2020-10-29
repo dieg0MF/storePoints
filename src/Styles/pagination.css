@@ -10,8 +10,13 @@
 .pagination button{
     margin: 0.5em;
     cursor: pointer;
+    background-color: white;
+    border: none;
     /* border: 1px solid black; */
 }
+.pagination button:disabled {
+    background: #ccc;
+  }
 .finalLine {
     width: 90%;
     margin: auto;

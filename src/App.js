@@ -17,11 +17,12 @@ import Footer from "./components/Footer"
 import "./Styles/Card.css"
 import "./Styles/midleBody.css"
 // import tableHistory from "./components/tableHistory"
+import Modal from "./components/Modal"
 
 export default function App() {
   return (
     <AppProvider>
-      <div>
+    
         <Header />
        <div className="noHeader"> 
        
@@ -37,7 +38,12 @@ export default function App() {
         <FetchAllProducts />
         <FetchRedeem />
         </div>
+        <div className="bodyGroup ">
         <div className="midleBody">
+        <Modal >
+    contenido del modal
+    <input />
+  </Modal> 
        <div className="bodyLeft"> 
          <AddPoints />
        <div className="tableHistory">
@@ -56,9 +62,9 @@ export default function App() {
       
         <Pagination />
         <hr class="line finalLine"></hr>
-
+        </div>
         <Footer />
-      </div>
+      
     </AppProvider>
   );
 }
