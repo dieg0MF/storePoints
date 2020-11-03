@@ -3,6 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content:space-evenly;
+    font-family: 'Noticia Text', serif;
     
 }
 .searchBar button {
@@ -13,8 +14,17 @@
     font-size: 0.8em;
    cursor: pointer;
    transition: background-color 0.4s;
+   font-family: 'Noticia Text', serif;
 }
 .searchBar button:hover{
     background-color: whitesmoke;
  
+}
+@media screen and (max-width: 735px) {
+    .searchBar button {
+
+        font-size: 0.5em;
+    }
+
+
 }

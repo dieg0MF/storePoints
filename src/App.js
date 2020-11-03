@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 
 import FetchAllProducts from "./components/FetchAllProducts";
 import Cards from "./components/Cards";
@@ -13,58 +12,52 @@ import AddPoints from "./components/AddPoints";
 import HistoryRedeem from "./components/HistoryRedeem";
 import SearchBar from "./components/SearchBar";
 import Pagination from "./components/Pagination";
-import Footer from "./components/Footer"
-import "./Styles/Card.css"
-import "./Styles/midleBody.css"
-// import tableHistory from "./components/tableHistory"
-import Modal from "./components/Modal"
+import Footer from "./components/Footer";
+import Modal from "./components/Modal";
+import ModalError from "./components/ModalError";
+
+import "./style.css";
+import "./Styles/Card.css";
+import "./Styles/midleBody.css";
 
 export default function App() {
   return (
     <AppProvider>
-    
-        <Header />
-       <div className="noHeader"> 
-       
-      
-  
+      <Header />
+      <div className="noHeader">
         <SearchBar />
-       
-      
-        <hr class="line"></hr>
+        <hr className="line"></hr>
         <FetchUser />
         <FetchHistory />
         <FetchPoints />
         <FetchAllProducts />
         <FetchRedeem />
-        </div>
-        <div className="bodyGroup ">
-        <div className="midleBody">
-        <Modal >
-    contenido del modal
-    <input />
-  </Modal> 
-       <div className="bodyLeft"> 
-         <AddPoints />
-       <div className="tableHistory">
-         <h4>changed points </h4>
-         <div className="historyList">
-      <HistoryRedeem/>
       </div>
-      </div>  
-        </div>
-        
-        <hr class="lineaVertical"></hr>
+      <div className="bodyGroup ">
+        <div className="midleBody">
+          <Modal />
+          <ModalError />
+          <div className="bodyLeft">
+            <AddPoints />
+            <div className="tableHistory">
+              <h4>changed points </h4>
+              <div className="historyList">
+                <HistoryRedeem />
+              </div>
+            </div>
+          </div>
 
+          <hr className="lineaVertical"></hr>
 
-        <div className="Cards"> <Cards /> </div>
+          <div className="Cards">
+            <Cards />
+          </div>
         </div>
-      
+
         <Pagination />
-        <hr class="line finalLine"></hr>
-        </div>
-        <Footer />
-      
+        <hr className="line finalLine"></hr>
+      </div>
+      <Footer />
     </AppProvider>
   );
 }

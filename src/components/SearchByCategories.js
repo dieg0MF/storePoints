@@ -7,7 +7,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 export default function SimpleMenu() {
   const { orderProducts, setOrderProducts } = useContext(AppContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
-  // console.log("KJKJKJKJK", props);
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -19,8 +19,6 @@ export default function SimpleMenu() {
   const handlerProductList = (e) => {
     setOrderProducts(e.target.id);
     setAnchorEl(null);
-    console.log("KJKJKJKJK", orderProducts);
-    console.log("KJKJKJKcdfddJK", e.target.id);
   };
 
   return (

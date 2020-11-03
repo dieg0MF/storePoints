@@ -1,66 +1,71 @@
-
-
-
 .Cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap ;
-    margin-bottom: 3em;
-    justify-content: center;
-    box-shadow: 2px 2px 4px 0px #000000 10%;
-  
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 3em;
+  justify-content: center;
+  box-shadow: 2px 2px 4px 0px #000000 10%;
 }
 
-.Card{
-    height: 15em;
-    margin:1.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* border: black solid 1px; */
-    align-items: center;
-    padding: 0.5em;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
-
-
-
+.Card {
+  height: 15em;
+  margin: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: black solid 1px; */
+  align-items: center;
+  padding: 0.5em;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
+
 .Card section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color:  rgba(71, 222, 236, 0.8);
-    width: 12em;
-    margin-top: 1em;
-    padding: 0.2em;
-    border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: rgb(144, 236, 248);
+  width: 12em;
+  margin-top: 1em;
+  padding: 0.2em;
+  border-radius: 15px;
 }
-.buy-blue{
-   
-    height: 2em;
-    margin-left: 0;
-    align-self: flex-end;
-    cursor: pointer;
+.buy-blue {
+  height: 2em;
+  margin-left: 0;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.buy-blue:hover {
+  transform: scaleY(1.5) scaleX(1.5);
 }
 .Card h6 {
-    margin: auto  1em;
-   
+  margin: auto 1em;
 }
 
-
-
-#Coin{ 
-    height:1.6em;
-    margin-bottom: -0.5em;
-
-
+#Coin {
+  height: 1.6em;
+  margin-bottom: -0.5em;
 }
 
-.line{
+.line {
   display: flex;
-    border-top: 3px solid rgba(217, 217, 217, 1);
-    margin-bottom: 2em;
-   
+  border-top: 3px solid rgba(217, 217, 217, 1);
+  margin-bottom: 2em;
+}
 
+@media screen and (max-width: 735px) {
+
+
+    .Cards{
+        max-width: 130px;
+        margin-left: 2em;
+    }
+    .buy-blue {
+        align-self: center;
+
+}
+.Card section{
+    width: 9em;
+}
 }

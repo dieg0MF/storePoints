@@ -4,7 +4,7 @@ import { AppContext } from "../AppProvider";
 const FetchPoints = () => {
   const { points, setPoints } = useContext(AppContext);
   const { handlerPoints, setHandlerPoints } = useContext(AppContext);
-  console.log("llega", handlerPoints);
+  const { error, SetError } = useContext(AppContext);
 
   // const stringToNum= parseInt(handlerPoints)
 
@@ -15,11 +15,11 @@ const FetchPoints = () => {
         "Content-Type": "application/json",
         Acept: "application/jsoon",
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjc0ZDNhYzJiNjU3MDAwMWZjZTZjNDQiLCJpYXQiOjE2MDE0OTE4ODV9.z7gZETAOoSL2NAHAKubUs4br9ka9D407fZnCvns3I0c"
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjc0ZDNhYzJiNjU3MDAwMWZjZTZjNDQiLCJpYXQiOjE2MDE0OTE4ODV9.z7gZETAOoSL2NAHAKubUs4br9ka9D407fZnCvns3I0c",
       },
       body: JSON.stringify({
-        amount: parseInt(handlerPoints)
-      })
+        amount: parseInt(handlerPoints),
+      }),
     };
     if (handlerPoints !== 0) {
       fetch(
@@ -32,13 +32,12 @@ const FetchPoints = () => {
         .then((body) => {
           setPoints(body);
           setHandlerPoints(0);
-          console.log("addPoints", points);
-          console.log("addPoints", handlerPoints);
+        })
+        .catch(function (error) {
+          SetError(error.message);
         });
     }
-  }, [handlerPoints !== 0]);
-  console.log("seVA", handlerPoints);
-  console.log("Puntos actualizados", points);
+  }, [handlerPoints]);
 
   return null;
 };

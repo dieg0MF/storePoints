@@ -5,6 +5,8 @@ const FetchProducts = () => {
   const { redeem, setRedeem } = useContext(AppContext);
   const [loading, setLoading] = useState(true);
   const { redeemProductId, setRedeemProductId } = useContext(AppContext);
+  const { error, SetError } = useContext(AppContext);
+  const { show, setShow } = useContext(AppContext);
 
   useEffect(() => {
     if (redeemProductId !== "") {
@@ -14,11 +16,11 @@ const FetchProducts = () => {
           "Content-Type": "application/json",
           Acept: "application/jsoon",
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjc0ZDNhYzJiNjU3MDAwMWZjZTZjNDQiLCJpYXQiOjE2MDE0OTE4ODV9.z7gZETAOoSL2NAHAKubUs4br9ka9D407fZnCvns3I0c"
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjc0ZDNhYzJiNjU3MDAwMWZjZTZjNDQiLCJpYXQiOjE2MDE0OTE4ODV9.z7gZETAOoSL2NAHAKubUs4br9ka9D407fZnCvns3I0c",
         },
         body: JSON.stringify({
-          productId: redeemProductId
-        })
+          productId: redeemProductId,
+        }),
       })
         .then((header) => {
           return header.json();
@@ -27,12 +29,15 @@ const FetchProducts = () => {
           setRedeem(body);
           setLoading(false);
           setRedeemProductId("");
+        })
+        .catch(function (error) {
+          SetError(error.message);
+          setShow(!show);
         });
     }
   }, [redeemProductId]);
-  console.log("redeem", redeem);
 
-  return <p></p>;
+  return null;
 };
 
 export default FetchProducts;

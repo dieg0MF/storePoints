@@ -14,8 +14,8 @@ const FetchProducts = () => {
         "Content-Type": "application/json",
         // 'Acept': 'application/jsoon',
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjc0ZDNhYzJiNjU3MDAwMWZjZTZjNDQiLCJpYXQiOjE2MDE0OTE4ODV9.z7gZETAOoSL2NAHAKubUs4br9ka9D407fZnCvns3I0c"
-      }
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjc0ZDNhYzJiNjU3MDAwMWZjZTZjNDQiLCJpYXQiOjE2MDE0OTE4ODV9.z7gZETAOoSL2NAHAKubUs4br9ka9D407fZnCvns3I0c",
+      },
     })
       .then((header) => {
         return header.json();
@@ -23,10 +23,9 @@ const FetchProducts = () => {
       .then((body) => {
         setUser(body);
       });
-  }, [setUser, redeem, handlerPoints ]);
-  console.log("userActUALIZADOS", user);
+  }, [setUser, redeem, handlerPoints]);
 
-  return <p>{}</p>;
+  return null;
 };
 
 export default FetchProducts;
