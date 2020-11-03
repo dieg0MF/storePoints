@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb1f46ea1f85805d15263d552c055513",
+    "revision": "bc104873eb244e494655c90c7d1ea2cf",
     "url": "/storePoints/index.html"
   },
   {
-    "revision": "7b0c1843dff600b3ff28",
-    "url": "/storePoints/static/css/main.d8a292e0.chunk.css"
+    "revision": "312e4b9bcf542d5bb741",
+    "url": "/storePoints/static/css/main.4a26a871.chunk.css"
   },
   {
-    "revision": "8071a52b19e38f08b9f0",
-    "url": "/storePoints/static/js/2.c6c25ae0.chunk.js"
+    "revision": "56a6682d1cf251adb70b",
+    "url": "/storePoints/static/js/2.88941068.chunk.js"
   },
   {
     "revision": "f7def617c168a3e9270f21ef8a75c08f",
-    "url": "/storePoints/static/js/2.c6c25ae0.chunk.js.LICENSE.txt"
+    "url": "/storePoints/static/js/2.88941068.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7b0c1843dff600b3ff28",
-    "url": "/storePoints/static/js/main.906aea2b.chunk.js"
+    "revision": "312e4b9bcf542d5bb741",
+    "url": "/storePoints/static/js/main.6bdfc55e.chunk.js"
   },
   {
     "revision": "a836cf7afe90491aad85",
